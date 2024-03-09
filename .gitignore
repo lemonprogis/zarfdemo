@@ -37,3 +37,5 @@ build/
 configs.json
 *.tar.zst
 zarf-sbom/
+setup
+zarf.schema.json

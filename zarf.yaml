@@ -1,16 +1,12 @@
 kind: ZarfPackageConfig
 metadata:
-  name: jokes-api
-  version: 1
+  name: "jokes-api"
+  version: "1"
   description: >
     A simple jokes api for demo purpose
 
-constants:
-  - name: FULL_IMAGE_NAME
-    value: "lemonpro/jokes-api:latest"
-
 variables:
-  - name: JAVA_TOOLS_OPTIONS
+  - name: JAVA_TOOL_OPTIONS
     description: any jvm configurations can go hear
     default: "-Dserver.port=8080"
     prompt: true

@@ -4,7 +4,7 @@ namespaceOverride: "jokes"
 nameOverride: "random-jokes"
 fullnameOverride: "random-jokes"
 
-fullImageName: "###ZARF_VAR_FULL_IMAGE_NAME###"
+fullImageName: "lemonpro/jokes-api:latest"
 imagePullPolicy: Always
 imagePullSecrets: []
 
