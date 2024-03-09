@@ -1,7 +1,7 @@
 resources:
   requests:
-    memory: "750Mi"
-    cpu: "500m"
+    memory: "1000Mi"
+    cpu: "1000m"
   limits:
     memory: "1000Mi"
-    cpu: "750m"
+    cpu: "1000m"

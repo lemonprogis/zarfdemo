@@ -8,9 +8,9 @@ containerPort: 8080
 
 contextPath: "/jokes"
 
-startupFailureThreshold: 3
-livenessFailureThreshold: 3
-readinessFailureThreshold: 1
+startupFailureThreshold: 10
+livenessFailureThreshold: 10
+readinessFailureThreshold: 10
 
 resources:
   requests:
@@ -19,7 +19,3 @@ resources:
   limits:
     memory: "1000Mi"
     cpu: "750m"
-
-envs:
-  - name: JAVA_TOOL_OPTIONS
-    value: "###ZARF_VAR_JAVA_TOOL_OPTIONS###"

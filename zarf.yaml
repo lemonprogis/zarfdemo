@@ -5,13 +5,6 @@ metadata:
   description: >
     A simple jokes api for demo purpose
 
-variables:
-  - name: JAVA_TOOL_OPTIONS
-    description: any jvm configurations can go hear
-    default: "-Dserver.port=8080"
-    prompt: true
-    sensitive: false
-
 components:
   - name: jokes-api
     required: true
