@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.fullnameOverride }}
-  namespace: {{ .Values.namespaceOverride }}
+  name: {{ .Chart.Name }}
+  namespace: {{ .Release.Namespace }}
 spec:
   progressDeadlineSeconds: 120
   selector:
     matchLabels:
-      app: {{ .Values.fullnameOverride }}
+      app: {{ .Chart.Name }}
   replicas: {{ .Values.replicaCount }}
   strategy:
     type: RollingUpdate
@@ -16,10 +16,10 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ .Values.fullnameOverride }}
+        app: {{ .Chart.Name }}
     spec:
       containers:
-        - name: {{ .Values.fullnameOverride }}
+        - name: {{ .Chart.Name }}
           image: {{ .Values.fullImageName }}
           imagePullPolicy: {{ .Values.imagePullPolicy }}
           env:

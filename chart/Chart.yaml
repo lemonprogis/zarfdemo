@@ -1,5 +1,5 @@
 apiVersion: v2
-name: jokesapi
+name: jokes-api
 description: A helm chart for running jokes API in Kubernetes
 type: application
 version: 1.0.0

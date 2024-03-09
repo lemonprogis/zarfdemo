@@ -1,9 +1,5 @@
 replicaCount: 1
 
-namespaceOverride: "jokes"
-nameOverride: "random-jokes"
-fullnameOverride: "random-jokes"
-
 fullImageName: "lemonpro/jokes-api:latest"
 imagePullPolicy: Always
 imagePullSecrets: []

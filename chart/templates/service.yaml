@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.fullnameOverride }}
-  namespace: {{ .Values.namespaceOverride }}
+  name: {{ .Chart.Name }}
+  namespace: {{ .Release.Namespace }}
 spec:
   type: ClusterIP
   ports:
@@ -11,4 +11,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: {{ .Values.fullnameOverride }}
+    app: {{ .Chart.Name }}
