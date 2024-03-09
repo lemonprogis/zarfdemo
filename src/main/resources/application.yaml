@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dad-jokes-api
+
+
+management:
+  server:
+    base-path: /
+server:
+  servlet:
+    context-path: /jokes
