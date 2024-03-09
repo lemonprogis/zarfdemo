@@ -24,6 +24,8 @@ components:
         namespace: jokes
         localPath: chart
         version: "1.0.0"
+        valuesFiles:
+          - local-values.yaml
     images:
       - "lemonpro/jokes-api:latest"
     actions:

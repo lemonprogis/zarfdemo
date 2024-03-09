@@ -18,11 +18,11 @@ readinessFailureThreshold: 1
 
 resources:
   requests:
-    memory: "###ZARF_VAR_REQUEST_MEMORY###" #"750Mi"
-    cpu: "###ZARF_VAR_REQUEST_CPU###" # "500m"
+    memory: "750Mi"
+    cpu: "500m"
   limits:
-    memory: "###ZARF_VAR_LIMITS_MEMORY###" # "1000Mi"
-    cpu: "###ZARF_VAR_LIMITS_CPU###" # "750m"
+    memory: "1000Mi"
+    cpu: "750m"
 
 envs:
   - name: JAVA_TOOL_OPTIONS
