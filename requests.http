@@ -1,1 +1,5 @@
+### get a random joke
 GET http://localhost:8080/jokes/random
+
+### healthz
+GET http://localhost:8080/jokes/health
